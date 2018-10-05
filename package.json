@@ -4,7 +4,7 @@
   "description": "docker deployment setup",
   "main": "index.js",
   "scripts": {
-    "start": "node ./app/server.js"
+    "start": "npm install && node ./app/server.js"
   },
   "repository": {
     "type": "git",

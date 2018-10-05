@@ -1,4 +1,4 @@
-FROM node:8
+FROM node:8-alpine
 
 #Create app directory
 RUN mkdir -p /app
@@ -15,6 +15,8 @@ RUN npm install
 
 #Copy all the application code to your working directory
 COPY . /app/
+
+EXPOSE 80
 
 #Run your build once container is launched
 
